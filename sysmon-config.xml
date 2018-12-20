@@ -1,0 +1,17 @@
+<Sysmon schemaversion="4.00">
+	<HashAlgorithms>md5,sha256</HashAlgorithms>
+	<CheckRevocation/>
+	
+	<EventFiltering>
+		<NetworkConnect onmatch="include">
+			<Image condition="end with">iexplore.exe</Image>
+		</NetworkConnect>
+		
+		<ProcessCreate onmatch="include">
+			<User condition="end with">IEUser</User>
+		</ProcessCreate>
+		
+		<ProcessTerminate onmatch="exclude">
+		</ProcessTerminate>
+	</EventFiltering>
+</Sysmon>
