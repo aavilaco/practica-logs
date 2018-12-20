@@ -1,5 +1,5 @@
-$WORKSPACE_ID="c83d5859-dc37-46a5-8def-5d303ac45992"
-$WORKSPACE_KEY="utKkwR+PyNB8U1lwwcxIV0JCSSdrXQbQ7/Om9P4jz+VwM315lXJq/y9HZcDCtJ1mB+KlS2VGBcmsuxsfPvxIZA=="
+$WORKSPACE_ID=""
+$WORKSPACE_KEY=""
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 function Unzip
