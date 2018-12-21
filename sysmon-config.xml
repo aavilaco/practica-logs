@@ -200,18 +200,18 @@
 
 
         <!-- Excluimos los demás eventos -->
-        <ProcessTerminate onmatch="include" />
-        <DriverLoad onmatch="include" />
-        <ImageLoad onmatch="include" />
-        <RawAccessRead onmatch="include" />
-        <ProcessAccess onmatch="include" />
-        <FileCreate onmatch="include" />
+        <ProcessTerminate onmatch="exclude" />
+        <DriverLoad onmatch="exclude" />
+        <ImageLoad onmatch="exclude" />
+        <RawAccessRead onmatch="exclude" />
+        <ProcessAccess onmatch="exclude" />
+        <FileCreate onmatch="exclude" />
         <FileCreateTime onmatch="exclude" />
-        <CreateRemoteThread onmatch="include" />
-        <RegistryEvent onmatch="include" />
-        <FileCreateStreamHash onmatch="include" />
-        <PipeEvent onmatch="include" />
-        <WmiEvent onmatch="include" />
+        <CreateRemoteThread onmatch="exclude" />
+        <RegistryEvent onmatch="exclude" />
+        <FileCreateStreamHash onmatch="exclude" />
+        <PipeEvent onmatch="exclude" />
+        <WmiEvent onmatch="exclude" />
     </EventFiltering>
     <CheckRevocation />
 </Sysmon>
